@@ -1,0 +1,550 @@
+html {
+  font-size: 16px;
+}
+
+body{
+    background: url('../img/desktop_background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size:100%
+}
+
+.tct-logo {
+    margin-right: auto;
+    margin-left: auto;
+    width: 256px;
+    padding-bottom: 20px;px;
+}
+
+.slogan  {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color:white;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+/* set a max-width for horizontal fluid layout and make it centered */
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 950px; /* or 1024px */
+  text-align: center;
+}
+
+.header-container, .month-browser .next, .month-browser .previous, .show-info.events, #events-calendar-phone .eventDetails { cursor: pointer; cursor: hand; }
+
+.header {
+    color:white;
+    font-size: 3.2rem;
+    font-family: "proxima-nova-condensed",sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    
+}
+
+.header-tag {
+    margin-top: -10px;
+    color:white;
+    font-size: .75rem;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 15px;
+
+}
+
+.beers {
+    background: rgba(170,108,57,.75);
+}
+
+.wines {
+    background: rgba(170,57,57,.75);
+}
+
+.foodtruck {
+    background: rgba(34,102,102,.75);
+}
+
+.foodtruck .header{
+    font-size: 2.75rem;
+}
+
+.extras .header {
+    font-size: 2.9rem;
+}
+
+.events .header {
+    font-size: 2.9rem;
+}
+
+.festival .header {
+    font-size: 2.7rem;
+}
+
+.events {
+    background: rgba(46,67,114,.75);
+}
+
+.extras {
+    background: rgba(108,69,136,.75);
+}
+
+.festival {
+    background: rgba(45,136,45,.75);
+}
+
+.festival .xs-content, .extras .xs-content, .wines .xs-content , .beers .xs-content   {
+    padding-bottom: 20px;
+}
+
+.col-md-12.extras { padding-left: 0px; padding-right: 0px;}
+
+.extras .overview {
+    color:white;
+    text-align: left;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .9rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.extras .overview a {
+    color: white;
+    text-decoration: underline;
+}
+
+.extras .overview h3 {
+    
+}
+
+.beer, .wine {
+    padding-top: 5px;
+    text-align: left;
+    color: white;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+.brewery, .winery {
+    margin-top: -8px;
+    color: rgb(255,212,162);
+    font-style: italic;
+}
+.brewery-links-container {
+    display:none;
+    position: absolute;
+    right: 15px;
+    left: 35px;
+}
+
+.beer:last-of-type {
+    padding-bottom: 22px;
+}
+
+.brewery-links {
+    background: rgb(255,255,255);
+    color: rgb(121, 92,64);
+    font-size: .8rem;
+    margin-left: -35px;
+    padding-left: 20px;
+}
+
+div.brewery-links div
+{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+div.brewery-links div:last-child {
+    background: rgba(160, 101,56,.2);
+}
+
+.col-md-12.foodtruck, .col-md-12.events {
+    padding-right: 0px;
+    padding-left: 0px;    
+}
+
+.previous .circle {
+    float:right;
+}
+
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid rgb(255,255,255);
+}
+
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-bottom: 5px solid transparent;  /* left arrow slant */
+	border-top: 5px solid transparent; /* right arrow slant */
+	border-left: 5px solid rgba(45,136,45,.75); /* bottom, add background color here */
+	font-size: 0;
+	line-height: 0;
+}
+
+.arrow-left {
+	width: 0; 
+	height: 0; 
+	border-bottom: 5px solid transparent;  /* left arrow slant */
+	border-top: 5px solid transparent; /* right arrow slant */
+	border-right: 5px solid rgba(45,136,45,.75); /* bottom, add background color here */
+	font-size: 0;
+	line-height: 0;
+}
+
+.center {
+    margin-right: auto;
+  margin-left: auto;
+}
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.circle {
+    margin-top:5px;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px; 
+	background-color: rgba(255,255,255,.75);
+	/* width and height can be anything, as long as they're equal */
+}
+
+.store-info, .store-hours {
+    text-align: left;
+    color: white;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.store-hours {
+    text-align: right;
+}
+
+/* lines used in header tag */
+.fancy {
+  line-height: 0.5rem;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+  top: 0;
+  width: 100%;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.festival .fancy span:before,
+.festival .fancy span:after {
+    width: 50%;
+}
+
+.extras .fancy span:before,
+.extras .fancy span:after {
+    width: 60%;
+}
+
+.wines .fancy span:before,
+.wines .fancy span:after {
+    width: 70%;
+}
+
+.beers .fancy span:before,
+.beers .fancy span:after {
+    width: 80%;
+}
+
+.events .fancy span:before,
+.events .fancy span:after {
+    width: 110%;
+}
+
+.foodtruck .fancy span:before,
+.foodtruck .fancy span:after {
+    width: 120%;
+}
+
+/* Responsive iFrame used for google calendar */
+ 
+.responsive-iframe-container {
+    overflow: hidden;
+}
+
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.hasTrucks {
+    background-color: white !important;
+}
+
+.responsive-iframe-container {
+}
+
+/* Calendar Stlying */
+.calendar-day, .eventDetails-wrapper{
+    background: #cbded7;
+}
+
+.eventDetails-wrapper {
+    margin-top: 50px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.long-month {
+    display:none;
+}
+
+.change {
+    font-family: "proxima-nova",sans-serif;
+    font-size: .8rem;
+    font-style: normal;
+    font-weight: 500;
+    color: #246462;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.calendar ul.month-browser {
+    color: white;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.calendar ul.weekdays{
+    color: white;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.calendar .date {
+    font-family: "proxima-nova",sans-serif;
+    font-size: .8rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#foodtruck-calendar-phone .calendar .date, #events-calendar-phone .calendar .date  {
+    font-size: 1.25rem;
+    text-align: center;    
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.calendar .days{margin-left:3px!important;}
+.calendar ul.month-browser li{width:33.3%;padding:0;border:0;text-align:center;text-transform:uppercase;height:auto;margin:20px 0;}
+
+#foodtruck-calendar-phone .calendar ul.month-browser li, #events-calendar-phone .calendar ul.month-browser li  {
+    margin: 0px 0;
+    width: 60%;
+}
+
+#foodtruck-calendar-phone .calendar ul.month-browser li:first-child, #foodtruck-calendar-phone .calendar ul.month-browser li:last-child,
+#events-calendar-phone .calendar ul.month-browser li:first-child, #events-calendar-phone .calendar ul.month-browser li:last-child  {
+    width: 20%;
+}
+
+#foodtruck-calendar-phone .calendar .selected
+{
+    background-color: #246462 !important;
+    color: white;
+}
+
+#events-calendar-phone .calendar .selected
+{
+    background-color: #2f3e69 !important;
+    color:white;
+}
+
+.eventDetails-date {
+    color: #246462;
+    background-color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: "proxima-nova",sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    
+}
+
+.col-md-12.festival {
+    margin-top: -10px;
+}
+
+#events-calendar-phone .eventDetails-date {
+    color: #2f3e69;
+}
+
+.eventDetails-events .eventDetails {
+    text-align: left;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #246462;
+    font-family: "proxima-nova",sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+#events-calendar-phone .eventDetails-events .eventDetails {
+    color: #2f3e69;
+}
+
+.calendar{width:100%;}
+.calendar ul{list-style:none;padding:0;margin:0;clear:both;width:100%;}
+.calendar ul.weekdays{height:40px;}
+.calendar ul.weekdays li{text-align:center;text-transform:uppercase;line-height:20px;border:none!important;padding:10px 6px;}
+.calendar li{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;width:14.2857142857%;padding:5px;display:block;float:left;border:1px solid #226666;margin-right:-1px;margin-bottom:-1px;overflow:visible!important;}
+.calendar .days:last-child li{margin-bottom:0px!important;}
+.calendar li .day,.calendar li .month{display:none;}
+.calendar .date{text-align:left;margin-bottom:5px;}
+.show-info{display:block;border-radius:4px;padding:2px;margin-bottom:5px;color:#666;line-height:14px;background:#e4f2f2;border:1px solid #b5dbdc;color:black;text-decoration:none;}
+
+.dinner {
+    background-color: #91d37c;    
+}
+
+.lunch {
+    background-color: #f69700;    
+}
+
+.hidden-lg .row-same-height .col-md-6.foodtruck, .hidden-lg .row-same-height .col-md-6.events {
+    padding-left: 0px;
+    padding-right:0px;
+}
+
+.brunch {
+    background-color: #EA8E8E;
+}
+
+.show-info {
+    font-family: "pragmatica-web",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .55rem;
+}
+
+/* background for footer */
+.store-info-row {
+    background: rgba(69,44,23,1);
+    background: -moz-linear-gradient(left, rgba(69,44,23,1) 0%, rgba(69,44,23,0.97) 5%, rgba(69,23,23,0.8) 35%, rgba(14,42,42,0.63) 65%, rgba(18,54,18,0.46) 95%, rgba(18,54,18,0.43) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(69,44,23,1)), color-stop(5%, rgba(69,44,23,0.97)), color-stop(35%, rgba(69,23,23,0.8)), color-stop(65%, rgba(14,42,42,0.63)), color-stop(95%, rgba(18,54,18,0.46)), color-stop(100%, rgba(18,54,18,0.43)));
+    background: -webkit-linear-gradient(left, rgba(69,44,23,1) 0%, rgba(69,44,23,0.97) 5%, rgba(69,23,23,0.8) 35%, rgba(14,42,42,0.63) 65%, rgba(18,54,18,0.46) 95%, rgba(18,54,18,0.43) 100%);
+    background: -o-linear-gradient(left, rgba(69,44,23,1) 0%, rgba(69,44,23,0.97) 5%, rgba(69,23,23,0.8) 35%, rgba(14,42,42,0.63) 65%, rgba(18,54,18,0.46) 95%, rgba(18,54,18,0.43) 100%);
+    background: -ms-linear-gradient(left, rgba(69,44,23,1) 0%, rgba(69,44,23,0.97) 5%, rgba(69,23,23,0.8) 35%, rgba(14,42,42,0.63) 65%, rgba(18,54,18,0.46) 95%, rgba(18,54,18,0.43) 100%);
+    background: linear-gradient(to right, rgba(69,44,23,1) 0%, rgba(69,44,23,0.97) 5%, rgba(69,23,23,0.8) 35%, rgba(14,42,42,0.63) 65%, rgba(18,54,18,0.46) 95%, rgba(18,54,18,0.43) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#452c17', endColorstr='#123612', GradientType=1 );
+}
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width:auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+/* JSSOR styles */
+.slider-caption {
+    color: white;
+    font-size: 1.5rem;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    width:100%;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: rgba(108,69,136,.85);
+}
+
+.slider-container {}
+#slider1_container{display: none; position: relative; margin-left: 0px; margin-right: 0px; width: 1140px; height: 760px; overflow: hidden; }
+.slider-loading {position: absolute; top: 0px; left: 0px;}
+.slider-loading-filter {filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block; background-color: #000; top: 0px; left: 0px;width: 100%; height:100%;}
+.slider-loading-image {position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;top: 0px; left: 0px;width: 100%;height:100%;}
+.slider-slides {cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 760px; overflow: hidden;}
+.jssora11l, .jssora11r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+    background: url(../img/a11.png) no-repeat;
+    overflow: hidden;
+}
+
+#displayIndex { 
+    position: absolute; 
+    bottom: 20px; 
+    right: 10px; 
+    width: 100px; 
+    height: 26px;
+    color: white;
+    font-size: 2rem;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.jssora11l { background-position: -11px -41px; top: 123px; left: 15px; }
+.jssora11r { background-position: -71px -41px; top: 123px; right: 15px;}
+.jssora11l:hover { background-position: -131px -41px; }
+.jssora11r:hover { background-position: -191px -41px; }
+.jssora11l.jssora11ldn { background-position: -251px -41px; }
+.jssora11r.jssora11rdn { background-position: -311px -41px; }
